@@ -1,17 +1,16 @@
-import LoginPage from "./components/pages/LoginPage"
-
+import LoginPage from "./components/pages/login/LoginPage";
 
 function App() {
   //state
-  
-   
+
   //comportement
- 
 
   //render
-  return <div>
-             <LoginPage />
-         </div>
+  return (
+    <div>
+      <LoginPage />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function LoginForm() {
   const [inputValue, setInputValue] = useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Empêcher le rechargement de la page
-    alert(`Bonjour ${inputValue}`);
     setInputValue(""); // Vider le formulaire après soumission
+    navigate(`order/${inputValue}`);
   };
 
   const handleChange = (e) => {
